@@ -16,6 +16,11 @@
 #' }
 #'
 #' @export
+# wsc_article <- function(...) {
+#   pdf_document_format(...,
+#                       format = "wsc_article",
+#                       template = "template.tex")
+# }
 wsc_article <- function(..., keep_tex = TRUE) {
 
   template <- find_resource("wsc_article", "template.tex")
