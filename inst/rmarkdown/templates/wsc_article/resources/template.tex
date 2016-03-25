@@ -1,0 +1,92 @@
+%**************************************************************************
+%*
+%*  Paper: ``INSTRUCTIONS FOR AUTHORS OF LATEX DOCUMENTS''
+%*
+%*  Publication: 2016 Winter Simulation Conference Author Kit
+%*
+%*  Filename: wsc16paper.tex
+%*
+%*  Date: January 31, 2001   Time:  9:45 PM
+%*      BASE of current version: Feb 01, 2010 (primary WSC'10 LaTeX file)
+%*
+%*  Word Processing System: TeXnicCenter and MiKTeX
+%*
+%*
+%*  All files need the following
+\input{wsc16style.tex}     % download from author kit.  Style files for wsc formatting. Don't remove this line - required for generating the final paper!
+
+\documentclass{wscpaperproc}
+
+
+%% The next versions of the hyperref command are used if you adopt the
+%% outdated latex-dvips-ps2pdf route in generating your pdf file. In
+%% this case you can use ps or eps files for graphics, but not pdf, jpeg, png etc.
+%% However, the final pdf file should embed all fonts required which means that you have to use file
+%% formats which can embed fonts. Please note that the final PDF file will not be generated on your computer!
+%% If you are using WinEdt or PCTeX, then use the following. If you are using
+%% Y&Y TeX then replace "dvips" with "dvipsone"
+
+%%\usepackage[dvips,colorlinks=true,urlcolor=blue,citecolor=black,%
+%% anchorcolor=black,linkcolor=black]{hyperref}
+%****************************************************************************
+
+  \usepackage{latexsym}
+  \usepackage{graphicx}
+  \usepackage{mathptmx}
+  \usepackage[pdftex,colorlinks=true,urlcolor=blue,citecolor=black,anchorcolor=black,linkcolor=black]{hyperref}
+
+
+
+%#########################################################
+%*
+%*  The Document.
+%*
+\begin{document}
+
+%***************************************************************************
+% AUTHOR: AUTHOR NAMES GO HERE
+% FORMAT AUTHORS NAMES Like: Author1, Author2 and Author3 (last names)
+%
+%		You need to change the author listing below!
+%               Please list ALL authors using last name only, separate by a comma except
+%               for the last author, separate with "and"
+%
+\WSCpagesetup{LastName1, LastName2, and LastNameLastAuthor}
+
+% AUTHOR: Enter the title, all letters in upper case
+\title{INSTRUCTIONS FOR AUTHORS OF PAPERS USING \LaTeX}
+
+% AUTHOR: Enter the authors of the article, see end of the example document for further examples
+\author{Theresa M. K. Roeder\\ [12pt]
+Department of Decision Sciences \\
+San Francisco State University\\
+1600 Holloway Avenue\\
+San Francisco, CA 94132, USA\\
+% Multiple authors are entered as follows.
+% You may also need to adjust the titlevbox size in the preamble - search for titlevboxsize
+\and
+Peter I. Frazier\\[12pt]
+School of Operations Research\\ and Information Engineering \\
+Cornell University\\
+206 Rhodes Hall\\
+Ithaca, NY 14853, USA\\
+\and
+Roberto Szechtman\\ [12pt]
+Department of Operations Research\\
+Naval Postgraduate School\\
+1 University Circle\\
+Monterey, CA 93943, USA\\
+\and
+Enlu Zhou\\ [12pt]
+H. Milton School of Industrial \& Systems Engineering\\
+Georgia Institute of Technology\\
+755 Ferst Drive NW\\
+Atlanta, GA 30332, USA
+}
+
+\maketitle
+
+$body$
+
+\end{document}
+

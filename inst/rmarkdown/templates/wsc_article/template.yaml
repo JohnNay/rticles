@@ -1,0 +1,5 @@
+name: WSC
+description: >
+ Template for creating an article for submission to WSC
+create_dir: true
+
